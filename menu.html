@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restoran - About Us</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <link rel="stylesheet" href="styleA.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styleT.css">
+</head>
+<body>
+    <header>
+         <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top ">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <span class="logo-icon">🍽️</span> <span class="text-warning">Lama Restaurant</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="service.html">Service</a></li>
+                    <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item">
+                        <a class="btn btn-warning" href="order.html">Book a Table</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    </header>
+
+    <section class="Top">
+        <div class="Top-content">
+            <h1>Menu</h1>
+            <p>HOME / PAGES /Menu </p>
+        </div>
+    </section>
+
+    <!--Content  -->
+    <section id="menu"  class="food-menu-section">
+        <h2 class="menu-title">Food Menu</h2>
+        <h3 class="menu-heading">Most Popular Items</h3>
+    
+        <div class="menu-tabs">
+            <span class="tab active" onclick="filterMenu('breakfast')">
+                ☕ Popular <b>Breakfast</b>
+            </span>
+            <span class="tab" onclick="filterMenu('lunch')">
+                🍔 Special <b>Lunch</b>
+            </span>
+            <span class="tab" onclick="filterMenu('dinner')">
+                🍽️ Lovely <b>Dinner</b>
+            </span>
+        </div>
+    
+        <div class="menu-items">
+            <!-- Breakfast Items -->
+            <div class="menu-item breakfast">
+                <img src="https://myincrediblerecipes.com/wp-content/uploads/2022/02/set-5-Beef-Fried-Rice-3-1365x2048.jpg" alt="Breakfast">
+                <h4>Beef Fried Rice <span class="price">Nu.130</span></h4>
+                <p>Flavorful blend of rice, beef, and spices.</p>
+            </div>
+            <div class="menu-item breakfast">
+                <img src="https://princesspinkygirl.com/wp-content/uploads/2022/11/pork-fried-rice-19hero-768x1151.jpg" alt="Breakfast">
+                <h4>Pork Fried Rice <span class="price">Nu.120</span></h4>
+                <p> Savory mix of rice, pork, and seasonings.</p>
+            </div>
+            <div class="menu-item breakfast">
+                <img src="https://indianhealthyrecipes.com/wp-content/uploads/2016/06/egg-bread-toast-breakfast.jpg" alt="Breakfast">
+                <h4>Egg Bread <span class="price">Nu.50</span></h4>
+                <p> Savory loaf enriched with eggs for texture.</p>
+            </div>
+            <div class="menu-item breakfast">
+                <img src="https://thumbs.dreamstime.com/z/puri-sabji-indian-semi-dry-potato-spicy-recipe-also-known-as-batata-aloo-ki-served-fried-poori-selective-focus-223998004.jpg" alt="Breakfast">
+                <h4>Puri Sabji<span class="price">Nu.50</span></h4>
+                <p> Popular Indian dish of fried bread with spiced vegetables.</p>
+            </div>
+            <div class="menu-item breakfast">
+                <img src="https://images.pexels.com/photos/12620971/pexels-photo-12620971.jpeg?cs=srgb&dl=pexels-anil-sharma-12620971.jpg&fm=jpg" alt="Breakfast">
+                <h4>Biryani Rice <span class="price">Nu.150</span></h4>
+                <p> Fragrant, spiced rice dish often with meat.</p>
+            </div>
+    
+            <!-- Lunch Items -->
+            <div class="menu-item lunch">
+                <img src="https://indianyug.com/wp-content/uploads/2018/01/Kolhapuri-mutton-curry-768x575.jpg" alt="Lunch">
+                <h4>Mutton Curry <span class="price">Nu.250</span></h4>
+                <p>Rich, flavorful dish with tender mutton and spices.</p>
+            </div>
+            <div class="menu-item lunch">
+                <img src="https://i.ytimg.com/vi/X_nAHNLuYlc/maxresdefault.jpg" alt="Lunch">
+                <h4>EMA Datshi <span class="price">Nu.175</span></h4>
+                <p>Spicy Bhutanese dish made with chilies and cheese</p>
+            </div>
+            <div class="menu-item lunch">
+                <img src="https://th.bing.com/th/id/OIP.KX82zVuC6U9RkWLQlYwhOAHaHa?rs=1&pid=ImgDetMain" alt="Lunch">
+                <h4>Matar Paneer <span class="price">Nu.125</span></h4>
+                <p>North Indian curry with peas and paneer.</p>
+            </div>
+            <div class="menu-item lunch">
+                <img src="https://th.bing.com/th/id/R.6ac52c6d3ed4a453a2a711e1cbb32f34?rik=XTA4gR1XpQrE4Q&pid=ImgRaw&r=0" alt="Lunch">
+                <h4>Potato French Fries <span class="price">Nu.175</span></h4>
+                <p>Crispy, deep-fried potato sticks with seasoning.</p>
+            </div>
+            <div class="menu-item lunch">
+                <img src="https://www.amedewa.com/wp-content/uploads/2019/06/Shakam-Paa-1024x680.jpg" alt="Lunch">
+                <h4>Beef Sha Kam <span class="price">Nu.285</span></h4>
+                <p>Traditional Tibetan dish of braised beef.</p>
+            </div>
+            <div class="menu-item lunch">
+                <img src="https://th.bing.com/th/id/OIP.Y4MQiZo8I2oQAtS8m3vkHQHaE7?rs=1&pid=ImgDetMain" alt="Lunch">
+                <h4>Pork Fried <span class="price">Nu.200</span></h4>
+                <p>Crispy, flavorful dish made with fried pork.</p>
+            </div>
+    
+            <!-- Dinner Items -->
+            <div class="menu-item dinner">
+                <img src="https://curryandketchup.no/v4/wp-content/uploads/2025/02/9472252chilly-chicken.jpg" alt="Dinner">
+                <h4>Chicken Chilli <span class="price">Nu.200</span></h4>
+                <p>Spicy, tangy dish with stir-fried chicken and peppers.</p>
+            </div>
+            <div class="menu-item dinner">
+                <img src="https://th.bing.com/th/id/OIP.xo5hKYvMQB3OxJevOV9hUgHaLH?rs=1&pid=ImgDetMain" alt="Dinner">
+                <h4>Fish Curry <span class="price">Nu.230</span></h4>
+                <p>Flavorful dish with tender fish cooked in spiced gravy.</p>
+            </div>
+            <div class="menu-item dinner">
+                <img src="https://i.pinimg.com/originals/c6/cc/66/c6cc6602a8a2c02b2f356d151a6083cf.jpg" alt="Dinner">
+                <h4>Chicken Curry <span class="price">Nu.200</span></h4>
+                <p>Flavorful dish with chicken cooked in spiced gravy. </p>
+            </div>
+            <div class="menu-item dinner">
+                <img src="https://th.bing.com/th/id/OIP.nTT5tvHk0Up59zRcC6oEygHaHa?rs=1&pid=ImgDetMain" alt="Dinner">
+                <h4>Chicken Drumstick <span class="price">Nu.240</span></h4>
+                <p>Juicy, flavorful cut of chicken, often fried.</p>
+            </div>
+            <div class="menu-item dinner">
+                <img src="https://www.joyfulhealthyeats.com/wp-content/uploads/2018/07/Thai-Vegetable-Curry-web-2.jpg" alt="Dinner">
+                <h4>Mixed Vegetable <span class="price">Nu.160</span></h4>
+                <p>Nutritious dish made with assorted cooked vegetables.</p>
+            </div>
+            <div class="menu-item dinner">
+                <img src="https://www.cubesnjuliennes.com/wp-content/uploads/2020/07/Punjabi-Aloo-Matar-Recipe.jpg" alt="Dinner">
+                <h4>Mattar Potato <span class="price">Nu.120</span></h4>
+                <p>Flavorful Indian dish made with peas and potatoes.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section>
+        <div id="Order-container">
+            <a href="order.html"><button id="Order-btn">Order Now</button></a>
+        </div>
+    </section>
+
+    
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Company Section -->
+            <div class="footer-section">
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="order.html">Reservation</a></li>
+                    <ul>
+                        <li><a href="#" id="privacy-link">Privacy Policy</a></li>
+                        <li><a href="#" id="terms-link">Terms & Conditions</a></li>
+                      </ul>
+                      
+                      <!-- Modal Container -->
+                      <div id="popup-modal" style="display:none;">
+                        <div id="popup-content">
+                          <span id="popup-close">&times;</span>
+                          <h2 id="popup-title"></h2>
+                          <p id="popup-text"></p>
+                        </div>
+                      </div>
+                </ul>
+            </div>
+    
+            <!-- Contact Section -->
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>📍 Namkhaling, Gelephu, Sarpang, Bhutan</p>
+                <p>📞 +975 17897655</p>
+                <p>📧 lamastar2@gmail.com</p>
+                <div class="footer-social">
+                    <a href="https://api.whatsapp.com/send?phone=%2B97577255610&context=AfeY5cPW8KLKwOoPfh4oWBNR7gaetS1iNcpf9TRZmN-HEFI8mBBu3HJ1tcTYGQj6Z6UAfUfhQ8-_9S9l1PR-4Eyp_Bp1U_Thd-CroTrJ85BVj9oTPWKaJiGJEWj4PNII-21G9JQ2Ln8YlYlObOftDtEZAg&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwY2xjawJrLkhleHRuA2FlbQIxMAABHie0xBceIrJTpZm9Fy_qvhxexMz3eJ6DijQBcIhVp5BEL-cHLclPNRplU30-_aem_mgn5nJGf1G7qiNlkXfGFpA"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.facebook.com/share/15EpwZLQeP/"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+    
+            <!-- Opening Hours Section -->
+            <div class="footer-section">
+                <h3>Opening</h3>
+                <p>Monday - Saturday: 09AM - 09PM</p>
+                <p>Sunday: 10AM - 08PM</p>
+            </div>
+    
+            <!-- Newsletter Section -->
+            <div class="footer-section">
+                <h3>Newsletter</h3>
+                <p>Subscribe to our newsletter for updates.</p>
+                <form>
+                    <input type="email" placeholder="Your email" required>
+                    <button type="submit">SIGNUP</button>
+                </form>
+            </div>
+        </div>
+    
+        <!-- Scroll to Top Button -->
+        <button id="scrollTopBtn" class="scroll-top-btn">^</button>
+    
+    </footer>
+
+    <!-- js link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script src="scriptpopup.js"></script>
+
+    </body>
+</html>

@@ -1,0 +1,94 @@
+.Top{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-family: sans-serif;   
+}
+.Top-content h1{
+    font-size: 3.5em; /* Adjust to match the picture */
+    font-weight: bold; /* Bold text */
+    margin-bottom: 10px;
+    text-transform: uppercase; /* Uppercase text */
+    letter-spacing: 2px; /* Add letter spacing */
+    color: white;
+    align-items: first baseline;
+}
+.Top-content p{
+    font-size: 1.1em; /* Adjust to match the picture */
+    font-weight: 500; /* Medium font weight */
+    color: white; /* Light grey color */
+    margin-top: 10px;
+    text-transform: uppercase; /* Uppercase text */
+    letter-spacing: 1px; 
+}
+
+#popup-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+#popup-content {
+    background: blue;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 500px;
+    width: 90%;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    color: #fff;
+}
+
+#popup-close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 24px;
+    color: #888;
+    cursor: pointer;
+}
+
+#Order-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+}
+
+#Order-btn {
+    background-color: #ff9900;
+    color: #000;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 14px 28px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 8px 0 #cc7a00; /* shadow for that lifted button look */
+    transition: all 0.2s ease;
+}
+
+#Order-btn:hover {
+    background-color: #e68a00;
+    box-shadow: 0 6px 0 #b36b00;
+    transform: translateY(2px);
+}
+
+#sliderImage {
+    transition: opacity 0.5s ease-in-out;
+}
+
+img {
+    transition: opacity 0.5s ease-in-out;
+}

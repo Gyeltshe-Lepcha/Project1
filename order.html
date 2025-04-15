@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restoran - About Us</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <link rel="stylesheet" href="styleA.css">
+    <link rel="stylesheet" href="styleT.css">
+</head>
+<body>
+    <header>
+         <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top ">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <span class="logo-icon">🍽️</span> <span class="text-warning">Lama Restaurant</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="service.html">Service</a></li>
+                    <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item">
+                        <a class="btn btn-warning" href="order.html">Book a Table</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    </header>
+
+    <section class="Top">
+        <div class="Top-content">
+            <h1>Place Order</h1>
+            <p>HOME / PAGES / Order</p>
+        </div>
+    </section>
+
+    <!--Content  -->
+        
+    <section id="book" class="reservation-section">
+        <div class="reservation-form">
+            <h2 class="reservation-title">Reservation</h2>
+            <h3 class="reservation-heading">Book A Table Online</h3>
+
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <input type="datetime-local" required>
+                <select>
+                    <option>People 1</option>
+                    <option>People 2</option>
+                    <option>People 3</option>
+                    <option>People 4</option>
+                </select>
+                <textarea placeholder="Special Request"></textarea>
+                <button type="submit">BOOK NOW</button>
+            </form>
+        </div>
+    </section>
+
+    <section>
+        <div class="container d-flex justify-content-center align-items-center min-vh-100">
+            <div class="order-container">
+                <h2 class="text-warning text-center">Food Order</h2>
+                <p class="text-light text-center">Order Your Favorite Meal Online</p>
+        
+                <form>
+                    <div class="mb-3">
+                        <input type="text" class="form-control" placeholder="Your Name" required>
+                    </div>
+                    <div class="mb-3">
+                        <input type="email" class="form-control" placeholder="Your Email" required>
+                    </div>
+                    <div class="mb-3">
+                        <input type="text" class="form-control" placeholder="Your Address" required>
+                    </div>
+        
+                    <div class="mb-3">
+                        <select class="form-control" required>
+                            <option selected disabled>Select Delivery Location</option>
+                            <option>Home</option>
+                            <option>Office</option>
+                            <option>Hotel</option>
+                            <option>Public Park</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+        
+                    <div class="mb-3">
+                        <select class="form-control" required>
+                            <option selected disabled>Select Your Food</option>
+                            <option>Burger</option>
+                            <option>Pizza</option>
+                            <option>Pasta</option>
+                            <option>Sushi</option>
+                            <option>Salad</option>
+                        </select>
+                    </div>
+        
+                    <div class="mb-3">
+                        <input type="number" class="form-control" placeholder="Quantity" min="1" required>
+                    </div>
+        
+                    <div class="mb-3">
+                        <textarea class="form-control" rows="3" placeholder="Special Instructions"></textarea>
+                    </div>
+        
+                    <button type="submit" class="btn btn-warning w-100">ORDER NOW</button>
+                </form>
+            </div>
+        </div>        
+    </section>
+    
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Company Section -->
+            <div class="footer-section">
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="order.html">Reservation</a></li>
+                    <ul>
+                        <li><a href="#" id="privacy-link">Privacy Policy</a></li>
+                        <li><a href="#" id="terms-link">Terms & Conditions</a></li>
+                      </ul>
+                      
+                      <!-- Modal Container -->
+                      <div id="popup-modal" style="display:none;">
+                        <div id="popup-content">
+                          <span id="popup-close">&times;</span>
+                          <h2 id="popup-title"></h2>
+                          <p id="popup-text"></p>
+                        </div>
+                      </div>
+                </ul>
+            </div>
+    
+            <!-- Contact Section -->
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>📍 Namkhaling, Gelephu, Sarpang, Bhutan</p>
+                <p>📞 +975 17897655</p>
+                <p>📧 lamastar2@gmail.com</p>
+                <div class="footer-social">
+                    <a href="https://api.whatsapp.com/send?phone=%2B97577255610&context=AfeY5cPW8KLKwOoPfh4oWBNR7gaetS1iNcpf9TRZmN-HEFI8mBBu3HJ1tcTYGQj6Z6UAfUfhQ8-_9S9l1PR-4Eyp_Bp1U_Thd-CroTrJ85BVj9oTPWKaJiGJEWj4PNII-21G9JQ2Ln8YlYlObOftDtEZAg&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwY2xjawJrLkhleHRuA2FlbQIxMAABHie0xBceIrJTpZm9Fy_qvhxexMz3eJ6DijQBcIhVp5BEL-cHLclPNRplU30-_aem_mgn5nJGf1G7qiNlkXfGFpA"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.facebook.com/share/15EpwZLQeP/"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+    
+            <!-- Opening Hours Section -->
+            <div class="footer-section">
+                <h3>Opening</h3>
+                <p>Monday - Saturday: 09AM - 09PM</p>
+                <p>Sunday: 10AM - 08PM</p>
+            </div>
+    
+            <!-- Newsletter Section -->
+            <div class="footer-section">
+                <h3>Newsletter</h3>
+                <p>Subscribe to our newsletter for updates.</p>
+                <form>
+                    <input type="email" placeholder="Your email" required>
+                    <button type="submit">SIGNUP</button>
+                </form>
+            </div>
+        </div>
+    
+        <!-- Scroll to Top Button -->
+        <button id="scrollTopBtn" class="scroll-top-btn">^</button>
+    
+    </footer>
+
+    <!-- js link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script src="scriptpopup.js"></script>
+
+    </body>
+</html>
